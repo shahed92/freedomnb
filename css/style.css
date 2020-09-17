@@ -1,0 +1,123 @@
+/*===========================Some SCSS Imports========================*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+/*===========================Some SCSS Variable========================*/
+/*===========================Global SCSS========================*/
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+header .navbar {
+  text-transform: uppercase;
+}
+
+header .navbar-light .navbar-brand {
+  line-height: 0;
+}
+
+header .navbar-light .navbar-brand h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+header .navbar-light .navbar-brand h1 span {
+  color: red;
+}
+
+header .navbar-light .navbar-brand p {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+header .nav-link {
+  color: black !important;
+  font-size: 1.1rem;
+  font-weight: 100;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+header .active .nav-link,
+header .nav-link:hover {
+  outline: 2px solid red;
+  outline-offset: -5px !important;
+  font-weight: 600;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.hero .hero-cap {
+  text-align: center;
+}
+
+.hero .hero-cap span {
+  color: red;
+}
+
+.hero .hero-cap h3 {
+  margin-top: 15%;
+}
+
+.hero .hero-cap h5 {
+  padding: 2rem 6px;
+}
+
+.hero .hero-slide {
+  width: 100%;
+  border: 2px solid red;
+}
+
+.hero .hero-slide img {
+  height: 486px !important;
+  -webkit-box-shadow: 1px 2px 7px;
+          box-shadow: 1px 2px 7px;
+}
+
+.freedom {
+  margin-top: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.freedom .img-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.freedom .company-info h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.freedom .company-info h1 span {
+  color: red;
+}
+
+.freedom .company-info p {
+  padding-top: 1.4rem;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=style.css.map */
