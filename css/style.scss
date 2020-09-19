@@ -16,6 +16,12 @@ $f-f: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
 }
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 body {
   margin: 0;
   padding: 0;
@@ -112,3 +118,122 @@ header {
     }
   }
 }
+.apoinment-section {
+  padding-top: 2rem;
+  .row {
+    margin: 0;
+    .img-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      img {
+        width: fill;
+      }
+    }
+  }
+
+  .apoinment {
+    padding-bottom: 3rem;
+    .icon {
+      float: left;
+      font-size: 6rem;
+      color: #55b1ed;
+      padding: 16px;
+    }
+    .apoinment-cap {
+      padding-left: 10rem;
+      span {
+        color: $highlight;
+      }
+    }
+  }
+}
+.service {
+  margin-top: 2rem;
+  .service-tagline {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+
+    .cap {
+      h1 {
+        font-size: 4rem;
+        color: #55b1ed;
+      }
+    }
+    .buttons {
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      button {
+        padding: 10px 3rem;
+        background-color: #fff;
+        margin-top: 4px;
+        position: relative;
+        text-align: end;
+        transition: all 0.4s linear;
+
+        i {
+          background-color: red;
+          color: #fff;
+          padding: 19px 9px;
+
+          font-size: 2rem;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+  }
+  .service-offer {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+    .cap {
+      display: flex;
+      h1 {
+        font-size: 1.5rem;
+        background-color: red;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 1rem;
+      }
+      p {
+        padding: 1rem 10px;
+      }
+    }
+  }
+}
+/////////footer
+footer {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-top: 5rem;
+  }
+  .stay-connected {
+    ul li {
+      display: inline-block;
+      margin: 1rem;
+
+      i {
+        font-size: 2rem;
+      }
+      a:hover i {
+        font-size: 2.1rem;
+      }
+    }
+  }
+  .copyright {
+    margin-top: 1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+///////end footer
