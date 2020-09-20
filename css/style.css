@@ -19,10 +19,17 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  border: 1px solid;
+  text-transform: capitalize;
+  font-family: monospace;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 header .navbar {
@@ -180,6 +187,8 @@ header .nav-link:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .service .service-tagline .cap h1 {
@@ -199,6 +208,7 @@ header .nav-link:hover {
 }
 
 .service .service-tagline .buttons button {
+  text-transform: capitalize;
   padding: 10px 3rem;
   background-color: #fff;
   margin-top: 4px;
@@ -222,6 +232,8 @@ header .nav-link:hover {
 
 .service .service-tagline .buttons button:hover {
   background-color: red;
+  color: #fff;
+  font-weight: bold;
 }
 
 .service .service-offer {
@@ -268,13 +280,81 @@ footer .stay-connected ul li i {
   font-size: 2rem;
 }
 
-footer .stay-connected ul li a:hover i {
-  font-size: 2.1rem;
-}
-
 footer .copyright {
   margin-top: 1rem;
-  font-weight: 600;
   text-align: center;
+  font-style: italic;
+  font-family: monospace;
+}
+
+/*Responsive media query*/
+@media (max-width: 991px) {
+  .active .nav-link,
+  .nav-link:hover {
+    outline: none !important;
+  }
+  .freedom .company-info h1 {
+    font-size: 1.5rem;
+  }
+  .freedom .company-info p {
+    /* padding-top: 1.4rem; */
+    word-spacing: 0;
+    letter-spacing: 0;
+  }
+  .apoinment-section .apoinment {
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  .service .service-tagline .cap h1 {
+    font-size: 2.5rem;
+  }
+  .service .service-tagline .buttons {
+    font-size: initial;
+  }
+  .service .service-tagline .buttons button i {
+    padding: 7px 9px;
+  }
+  .service .service-offer {
+    -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .service .service-offer img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 806px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero .hero-slide {
+    border: none;
+    margin-top: 1rem;
+  }
+  .freedom {
+    text-align: center;
+  }
+  .freedom .img-grid {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+  footer h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .freedom {
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .freedom .img-grid {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
