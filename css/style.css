@@ -438,4 +438,29 @@ footer .copyright {
   top: 60%;
   background-color: #55b1ed;
 }
+
+.form {
+  position: fixed;
+  width: 40vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #6c5d58;
+  padding: 20px;
+  color: #fff;
+  display: none;
+}
+
+.form textarea.form-control {
+  height: 6rem;
+}
+
+.close-btn {
+  font-size: 2rem;
+  position: absolute;
+  left: 4px;
+  top: -11px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

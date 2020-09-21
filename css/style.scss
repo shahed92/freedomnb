@@ -400,3 +400,33 @@ footer {
   }
 }
 // end service css
+////////////////pop up
+///////form
+
+.form {
+  position: fixed;
+  width: 40vw;
+  // margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #6c5d58;
+  padding: 20px;
+  color: #fff;
+  // bottom: 6rem;
+  display: none;
+
+  textarea.form-control {
+    height: 6rem;
+  }
+}
+.close-btn {
+  font-size: 2rem;
+  position: absolute;
+  left: 4px;
+  top: -11px;
+  cursor: pointer;
+}
+
+////end form

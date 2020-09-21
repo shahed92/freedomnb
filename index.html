@@ -61,7 +61,7 @@
                 <a class="nav-link" href="service.html">services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">reservation</a>
+                <a class="nav-link" href="reservation.html">reservation</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">contact us</a>
@@ -82,7 +82,9 @@
           clients call Medical Answering Services MAS at <br />
           <span> 1-866-932-7740</span>
         </h5>
-        <button class="btn btn-danger btn-lg">schedule pickup</button>
+        <button class="btn btn-danger btn-lg pop-up-btn">
+          schedule pickup
+        </button>
       </div>
       <div class="hero-slide" data-aos="fade-left">
         <div
@@ -138,7 +140,7 @@
                 Discuss your NEMT needs with one of our representatives. Set an
                 appointment today.
               </p>
-              <button class="btn btn-primary">Click Here</button>
+              <button class="btn btn-primary pop-up-btn">Click Here</button>
             </div>
           </div>
           <div class="apoinment">
@@ -149,7 +151,7 @@
                 Do you know someone who could benefit from our services? Refer
                 them to us now!
               </p>
-              <button class="btn btn-primary">Click Here</button>
+              <button class="btn btn-primary pop-up-btn">Click Here</button>
             </div>
           </div>
         </div>
@@ -164,8 +166,12 @@
           <h6>Non-Medical Transportation</h6>
         </div>
         <div class="buttons">
-          <button><i class="fas fa-arrow-right"></i>Application</button>
-          <button><i class="fas fa-arrow-right"></i>survey</button>
+          <button class="pop-up-btn">
+            <i class="fas fa-arrow-right"></i>Application
+          </button>
+          <button class="pop-up-btn">
+            <i class="fas fa-arrow-right"></i>survey
+          </button>
         </div>
       </div>
       <div class="service-offer container">
@@ -181,7 +187,7 @@
           <div class="box2">
             <h1>view more</h1>
             <p>Check out the other services we can offer you.</p>
-            <a href="#" class="btn btn-primary">click here</a>
+            <a href="service.html" class="btn btn-primary">click here</a>
           </div>
         </div>
         <div class="cap">
@@ -231,7 +237,85 @@
       </div>
       <p class="copyright">All rights Reserved @freedomnb</p>
     </footer>
-    <!-- end service section -->
+    <!-- end footer -->
+
+    <!-- pop up form -->
+
+    <form action="" class="form">
+      <div class="close-btn">x</div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="firstname">First name</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              class="form-control"
+              placeholder="first name"
+              required
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="lastname">Last name</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              class="form-control"
+              placeholder="last name"
+              required
+            />
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          class="form-control"
+          placeholder="lasvegas, 12/d street"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="number">Number</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          class="form-control"
+          placeholder="+880122344589"
+          required
+        />
+      </div>
+      <div class="text-area form-group">
+        <label for="text"><strong>Message</strong></label>
+        <textarea
+          name="text"
+          id=""
+          cols="80"
+          rows="5"
+          placeholder="Your message"
+          class="form-control"
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender" class="form-control">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+
+    <!--  end of pop up form -->
+
     <!-- ========all script======== -->
     <script src="./js/app.js"></script>
 
